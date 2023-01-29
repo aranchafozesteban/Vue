@@ -10,7 +10,7 @@ const haveRoleGuard = (to: RouteLocation, from: RouteLocation, next: any) => {
     // queremos navegar!
     next();
   } else {
-    alert("No eres admin! No puedes pasar!");
+    alert("No puedes pasar. Primero inicia sesión");
     next({ name: "home" });
   }
 };
